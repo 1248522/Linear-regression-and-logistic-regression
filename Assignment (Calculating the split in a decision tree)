@@ -1,0 +1,10 @@
+a)Compute the Gini index for the attributes gender,car type, Shirt size on which to split the dataset.
+     1-2×0.5^2=0.5
+b)Of the three above,which is the best to use for splitting.
+   -Car Type, because it has the lowest Gini among the three attributes.
+c)Compute the information entropy for the attributes Gebder,Car Type,Shirt Size on which to split the dataset.
+   -[(4/9)*log2(4/9)+(5/9)*log2(5/9)
+   =-[(-0.51997)+(-0.47111)]
+     =0.99107
+d)Of the three above, which is the best to use for splitting.
+-Gendet,due to its lower value in comparison to car type depicting that gender has a more even distribution.
