@@ -7,4 +7,4 @@ c)Compute the information entropy for the attributes Gebder,Car Type,Shirt Size 
    =-[(-0.51997)+(-0.47111)]
      =0.99107
 d)Of the three above, which is the best to use for splitting.
--Gendet,due to its lower value in comparison to car type depicting that gender has a more even distribution.
+-Gender,due to its lower value in comparison to car type depicting that gender has a more even distribution.
