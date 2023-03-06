@@ -1,0 +1,30 @@
+*churn_modelling.csv*
+
+rf = RandomForestRegressor(n_estimators = 1000, random_state = 42)
+rf.fit(X_train, y_train.values.ravel());
+
+y_test_pred5 = rf.predict(X_test) >= 0.3
+printConfusionMatrix ("Confusion Matrix of random forest on test data" , y_test , y_test_pred5)
+performanceTest5 = getModelPerformance (y_test , y_test_pred5)
+printPerformanceData("Random forest model's Performance on test data" , performanceTest5)
+rf_prob = rf.predict(X_test)
+rf_score = metrics.roc_auc_score(y_test, y_test_pred5)
+print ('AUC Score : ' + str(rf_score))
+plotLR_ROC((1-positivePercent) , rf_prob , y_test , X_test , "Random Forest")
+Confusion Matrix of random forest on test data
+==============================
+True Negatives : 2041
+True Positives : 395
+False Positives : 375
+False Negatives : 189
+==============================
+Random forest model's Performance on test data
+==============================
+Sensitivity : 0.6763698630136986
+Specificity : 0.8447847682119205
+Accuracy : 0.812
+Precision : 0.512987012987013
+Recall : 0.6763698630136986
+Mathew Accuracy : 0.47241501862048674
+==============================
+AUC Score : 0.7605773156128095
